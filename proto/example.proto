@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "github.com/dlstjq7685/ttrpc/simple/example;example";
+
+service Example {
+	rpc Method1(Method1Request) returns (Method1Response);
+}
+
+message Method1Request {
+	string foo = 1;
+	string bar = 2;
+}
+
+message Method1Response {
+	string foo = 1;
+	string bar = 2;
+}
